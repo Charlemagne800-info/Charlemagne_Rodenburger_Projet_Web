@@ -1,0 +1,148 @@
+@font-face {
+	font-family: 'Sinistre';
+	src: url('assets/fonts/Sinistre_StCaroline.otf') format('opentype');
+    font-weight: 400;
+}
+body {
+	font-family: 'Sinistre', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Sinistre', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #3a3a3a;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: row;
+}
+
+header > a,
+header button {
+    color: white;
+    margin: 0 15px;
+    font-size: 1.3em;
+}
+
+header > a:hover {
+    color: red;
+}
+
+header button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+header button:hover{
+    color: red
+}
+
+header .dropdown-1{
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+
+header .dropdown-1 .content {
+    display: none;
+}
+
+header .dropdown-1:hover .content {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #a39d9d;
+    top: 70px;
+    width: 120%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    color: black
+}
+
+header .content a {
+    color: black;
+    padding: 3px 0;
+}
+
+header .content a:hover {
+    color: red;
+}
+
+header .icon {
+    display: none;
+}
+
+@media (max-width: 650px) {
+    header > a,
+    header button {
+        display: none;
+    }
+    header .icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 5% !important;
+        top: 20px;
+        padding: 0 !important;
+        cursor: pointer;
+    }
+
+
+    header.responsive > a {
+        padding: 10px 0;
+    }
+    header.responsive > a,
+    header.responsive .dropdown-1 {
+        display: block;
+        width: 100%;
+    }
+
+    header.responsive button {
+        display: block;
+        padding: 10px 0;
+    }
+
+    header {
+        flex-direction: column;
+        min-height: 70px;
+        height: 100%;
+        align-items: flex-start;
+    }
+
+    header .dropdown-1:hover .content {
+        position: relative;
+        width: 100%;
+        top: 0;
+        padding: 10px 25px;
+    }
+
+}
+
+.mapgenie {
+    width: 99.8%;
+    height: 92vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#Carte_Classique {
+    width: 100%;
+    height: 92vh;
+    background-color: black;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="assets/image/icons8-skyrim-30.png">
+        <title>Wiki Skyrim (made in France)</title>
+    </head>
+    <body>
+        <header id="navbar" class="nav">
+            <a href="Index.html">Accueil</a>
+            <a href="Univers.html">Univers</a>
+            <div class="dropdown-1">
+                <button>Carte</button>
+                <div class="content">
+                    <a href="Carte_Classique.html">Carte Classique</a>
+                    <a href="Carte_Interactive.html">Carte Interactive</a>
+                </div>
+            </div>
+            
+            <div class="dropdown-1">
+                <button>Information générales</button>
+                <div class="content">
+                    <a href="#">Guide du débutant</a>
+                    <a href="#">Races</a>
+                    <a href="#">Compétences</a>
+                </div>
+            </div>
+            <a href="#">A propos</a>
+            <a class="icon" onclick="myFunction()">&#9776</a>
+        </header>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navbar");
+                if (x.className === "nav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "nav";
+                }
+            }
+        </script>
+    </body>
+</html>
