@@ -5,7 +5,7 @@
 }
 body {
 	font-family: 'Sinistre', sans-serif;
-    background-image: url(assets/image/Fond_Skyrim2.jpg);
+    background-image: url(assets/image/Fond_skyrim.jpg);
     background-size: cover;
 }
 
@@ -59,7 +59,7 @@ header .dropdown-1{
 header .dropdown-1 .content {
     display: none;
     z-index: 3;
-    opacity: 0.95;
+    opacity: 0.9;
 }
 
 header .dropdown-1:hover .content {
@@ -156,15 +156,13 @@ main {
     color: white;
     min-height: 800px;
     margin: 30px auto 10px auto;
-    opacity: 0.9;
+    opacity: 0.95;
     z-index: 1;
-    padding: 20px 10px 10px 20px;
-    border-radius: 10px;
-    line-height: 25px;
+
 }
 
 main h1 {
     text-align: center;
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
