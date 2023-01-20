@@ -4,42 +4,102 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../Info_General.css">
         <script src="js/script.js"></script>
         <link rel="icon" type="image/png" href="assets/image/icons8-skyrim-30.png">
         <title>Wiki Skyrim (made in France)</title>
     </head>
     <body>
         <header id="navbar" class="nav">
-            <a href="Index.html">Accueil</a>
-            <a href="univers.html">Univers</a>
+            <a href="../Index.html">Accueil</a>
+            <a href="../univers.html">Univers</a>
             <div class="dropdown-1">
                 <button>Carte</button>
                 <div class="content">
-                    <a href="cartes/Carte_Classique.html">Carte Classique</a>
-                    <a href="cartes/Carte_Interactive.html">Carte Interactive</a>
+                    <a href="../cartes/Carte_Interactive.html">Carte Interactive</a>
                 </div>
             </div>
             <div class="dropdown-1">
                 <button>Information générales</button>
                 <div class="content">
-                    <a href="informations_generales/guide_du_débutant.html">Guide du débutant</a>
-                    <a href="informations_generales/races.html">Races</a>
-                    <a href="informations_generales/compétences.html">Compétences</a>
-                    <a href="informations_generales/factions.html">Factions</a>
-                    <a href="informations_generales/objets.html">Objets</a>
-                    <a href="informations_generales/armes.html">Armes</a>
-                    <a href="informations_generales/armures.html">Armures</a>
-                    <a href="informations_generales/alchimie.html">Alchimie</a>
-                    <a href="informations_generales/enchantement.html">Enchantement</a>
-                    <a href="informations_generales/artisanat.html">Artisanat</a>
-                    <a href="informations_generales/codes_de_triche.html">Codes de triche</a>
+                    <a href="guide_du_débutant.html">Guide du débutant</a>
+                    <a href="races.html">Races</a>
+                    <a href="compétences.html">Compétences</a>
+                    <a href="objets.html">Objets</a>
+                    <a href="armes.html">Armes</a>
+                    <a href="armures.html">Armures</a>
+                    <a href="codes_de_triche.html">Codes de triche</a>
                 </div>
             </div>
-            <a href="a_propos.html">A propos</a>
+            <a href="../a_propos.html">A propos</a>
             <a class="icon" onclick="myFunction()">&#9776</a>
         </header>
         <main>
+            <img src="/assets/image/CHeat.png" alt="Cheat_img" height="200" width="167">
+            <h2>1. Bases</h2>
+            <p>AVERTISSEMENT : Certaines de ces commandes peuvent vraiment gâcher votre jeu.</p>
+            <p>Voici quelques notions de base que vous devez connaître sur les commandes de la console :</p>
+            <p>Votre jeu sera mis en pause pendant que la console est ouverte.</p>
+            <p>Si vous faites un clic gauche sur un objet, l'identifiant de l'élément s'affichera.</p>
+            <p>Faites défiler dans la console en appuyant sur Pageup ou Pagedown.</p>
+            <p> Vous pouvez facilement invoquer vos commandes de console précédentes en appuyant sur ▲ ou ▼.</p>
+            <br>
+            <h2>2. Commandes générales</h2>
+            <p>tgm - mode dieu (invincible, flèches infinies, endurance et magie infinies)</p>
+            <p>tcl - pas de collision (traverser les murs et voler dans le ciel)</p>
+            <p>tfc - caméra libre (la première personne rend votre personnage invisible ► la troisième personne et votre personnage sera visible)</p>
+            <p>tfc 1 - caméra libre + arrêt du temps (même chose que tfc et parfait pour les captures d'écran)</p>
+            <p>tfc - caméra libre</p>
+            <p>tm - Active et désactive les menus et l'interface utilisateur. (Attention, même la console devient invisible !)</p>
+            <p>coc [cell id] - Cela vous téléportera à n'importe quel endroit que vous voulez. (par exemple : "coc WhiterunDragonsreach" vous téléportera au Dragonsreach à Whiterun)</p>
+            <p>set timescale to [insérer le numéro ici] - Accélère ou ralentit le temps. (16.1 est la valeur par défaut)</p>
+            <p>help [] - Vous donne des informations, par exemple Item-ID ou ref-ID. (tapez par exemple : "help Bandit 4", de nombreux noms et identifiants s'afficheront) C'est très utile si vous ne trouvez pas l'identifiant de l'élément pour le matériel que vous souhaitez tricher.</p>
+            <p>desactivate - Cela rend l'objet sélectionné invisible. (taper enable rend l'objet à nouveau visible) Cliquez avec le bouton gauche par exemple sur un cadavre, couché dans votre maison depuis des mois et écrivez disable.</p>
+            <p>resetquest [ID de quête] - Réinitialise une quête.</p>
+            <p>completequest [ID de quête] - Termine une quête.</p>
+            <p>tmm 1 - révèle toute la carte</p>
+            <p>unlock - déverrouille l'élément sélectionné</p>
+            <p>lock - verrouille l'élément sélectionné</p>
+            <p>player.paycrimegold 0 0 [faction code] - supprime la prime de la ville sélectionnée (mettez votre or dans un coffre sinon il pourrait être supprimé du montant que vous devez réellement payer)</p>
+            <br>
+            <h2>3. Basé sur les personnages</h2>
+            <p>showracemenu - Cela ouvre le menu de personnalisation des personnages. (si vous en avez marre de votre look par exemple) Ne changez pas de race ou de sexe avec ça ! Cela va foutre en l'air vos compétences.</p>
+            <p>player.setrace [race you want] - Modifie votre race selon ce que vous voulez. (par exemple : player.setrace nord)</p>
+            <p>setgs fJumpHeightMin [insert number here] - Cela vous fait sauter plus haut. (Je recommande d'activer le mode Dieu à cause des dégâts de chute)</p>
+            <p>player.setav [compétence] [nombre] - Boostez la compétence choisie. (setav block 100 boostera votre block à 100 par exemple)</p>
+            <p>player.addperk [perk ID] - Ajoute l'avantage sélectionné. (player.addperk 000F2CA6 ajoute l'altération novice par exemple)</p>
+            <p>player.removeperk [perk ID] - Supprime l'avantage sélectionné. (player.removeperk 000F2CA6 supprime l'altération novice par exemple)</p>
+            <p>player.setav speedmult [insert number here] - Cela multipliera votre vitesse de course. (100 = augmenter de 100% à ma connaissance)</p>
+            <p>player.advlevel [insert number] - Augmente votre niveau.</p>
+            <p>psb - Débloque tous les sorts.</p>
+            <p>resethealth - Soigne la cible sélectionnée.</p>
+            <p>set killmoverandom [insérer le nombre] - Ceci définit la probabilité d'un killmove au pourcentage choisi.</p>
+            <br>
+            <h2>4. Articles</h2>
+            <p>player.additem [identifiant de l'objet] [numéro] - Oui, vous pouvez ajouter tous les objets de tout le jeu à votre inventaire avec cette simple commande.</p>
+            <p>Cela fonctionne comme ceci :</p>
+            <p>player.additem 0000000f 100000 (0000000f = or)</p>
+            <p>Vous avez maintenant 100 000 pièces d'or de plus.</p>
+            <p>Si vous ne connaissez aucun identifiant, recherchez simplement l'élément sur Google.</p>
+            <p>Si vous vous demandez si certains codes d'articles commencent par un xx. Le code de l'article ne fonctionnera bien sûr pas avec le xx, il faut donc remplacer le xx par par exemple 02. (xx = article d'un DLC) Vous ne savez pas quels numéros vous devez insérer, mais vous pouvez facilement le prouver par gauche en cliquant sur quelque chose du DLC (pendant que la console est ouverte). Si je fais un clic gauche par exemple un Chaurus Hunter du DLC Dawnguard "02005204" apparaît.</p>
+            <p>Ensuite, vous savez que 02 est le début de l'ID des éléments Dawnguard. (C'est dans mon cas 02 donc c'est peut-être différent pour vous !)</p>
+            
+            <p>Si vous n'aimez pas tabuler et rechercher l'identifiant de l'élément sur Google, vous pouvez également taper "help lingot" dans la console, il affiche une variété de choses dans ce cas, chaque lingot et son identifiant.</p>
+            <p>Si c'est un PNJ ou quelque chose comme ça, il sera affiché à l'extrême gauche du texte comme NPC :, MISC :, ARMO :, WEAP : etc. . Avec cela, j'espère que vous trouverez ce que vous cherchez. Comme décrit au début, vous "faites défiler" vers le haut et vers le bas avec la page haut/bas (pas les touches fléchées).</p>
+            
+            <p>S'il y a des 0 qui précèdent, il n'est pas nécessaire de les saisir.</p>
+            <p>Exemple:</p>
+            <p>Or 00000f = f</p>
+            <p>Flèche Deadric 000139C0 = 139C0</p>
+            <br>
+            <h2>5. PNJ</h2></p>
+            <p>killall - Tue tout le monde à proximité.</p>
+            <p>kill [insérer ID] - Tue une cible spécifique. (il est plus simple de faire un clic gauche sur la cible et de taper kill)</p>
+            <p>resurrect [insert ID] - Ramène la créature sélectionnée à la vie. (il est plus simple de faire un clic gauche sur la cible et de taper ressusciter)</p>
+            <p>setscale [nombre de 1 à 10] - Cela rend votre cible énorme. (encore un clic gauche sur votre cible)</p>
+            <p>unequipall - Déséquipe tous les objets du PNJ sélectionné.</p>
+            <p>player.placeatme [insert ID] [number] - Crée une cible spécifique. (par exemple : "player.placeatme 1068FE 2" génère deux bandits)</p>
+            <p>player.moveto [insert ref-ID] - Vous téléporte au PNJ sélectionné. (par exemple : "player.moveto 0001B131" téléporter à Ulfric Sombrage)</p>
 
         </main>
     </body>
