@@ -1,0 +1,197 @@
+@font-face {
+	font-family: 'Sinistre';
+	src: url('assets/fonts/Sinistre_StCaroline.otf') format('opentype');
+    font-weight: 400;
+}
+body {
+	font-family: 'Sinistre', sans-serif;
+    background-image: url(assets/image/Image_fond_createurs.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.compass {
+    margin-left: auto;
+    display: block;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Sinistre', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #3a3a3a;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: row;
+}
+
+header > a,
+header button {
+    color: white;
+    margin: 0 15px;
+    font-size: 1.3em;
+}
+
+header > a:hover {
+    color: red;
+}
+
+header button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+header button:hover{
+    color: red
+}
+
+header .dropdown-1{
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+
+header .dropdown-1 .content {
+    display: none;
+    z-index: 3;
+    opacity: 0.95;
+}
+
+header .dropdown-1:hover .content {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #a39d9d;
+    top: 70px;
+    width: 120%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    color: black;
+    z-index: 3;
+}
+
+header .content a {
+    color: black;
+    padding: 3px 0;
+    z-index: 3;
+}
+
+header .content a:hover {
+    color: red;
+}
+
+header .icon {
+    display: none;
+}
+
+@media (max-width: 650px) {
+    header > a,
+    header button {
+        display: none;
+    }
+    header .icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 5% !important;
+        top: 20px;
+        padding: 0 !important;
+        cursor: pointer;
+    }
+
+
+    header.responsive > a {
+        padding: 10px 0;
+        z-index: 3;
+    }
+    header.responsive > a,
+    header.responsive .dropdown-1 {
+        display: block;
+        width: 100%;
+        z-index: 3;
+    }
+
+    header.responsive button {
+        display: block;
+        padding: 10px 0;
+    }
+
+    header {
+        flex-direction: column;
+        min-height: 70px;
+        height: 100%;
+        align-items: flex-start;
+        z-index: 3;
+    }
+
+    header .dropdown-1:hover .content {
+        position: relative;
+        width: 100%;
+        top: 0;
+        padding: 10px 25px;
+        z-index: 3;
+    }
+    
+    
+    
+}
+
+.mapgenie {
+    width: 99.8%;
+    height: 92vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main {
+    background: rgb(20, 20, 20);
+    width: 80%;
+    color: white;
+    min-height: 800px;
+    margin: 30px auto 10px auto;
+    opacity: 0.9;
+    z-index: 1;
+    padding: 20px 10px 10px 20px;
+    border-radius: 10px;
+    line-height: 25px;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+
+}
+
+.prenom{
+    width:300px;
+    height: 200px;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 100%;
+    grid-template-columns: 520px 520px 450px;
+    margin: 50px 50px 0;
+    
+}
+
+
