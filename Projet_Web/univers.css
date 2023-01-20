@@ -10,8 +10,9 @@ body {
     background-position: center;
 }
 
-#compass {
-    z-index: 5;
+.compass {
+    margin-left: auto;
+    display: block;
 }
 
 p {
